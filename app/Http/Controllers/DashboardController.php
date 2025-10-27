@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
+use Carbon\Carbon;
 
 class DashboardController extends Controller
 {
@@ -28,6 +29,17 @@ class DashboardController extends Controller
             $temperatureChartData = $data['temperatureChartData'] ?? [];
             $tdsChartData = $data['tdsChartData'] ?? [];
             $plantingData = $data['plantingData'] ?? [];
+            // 🔹 3. Format tanggal agar mudah dibaca (Indonesia)
+            $plantingData = collect($plantingData)->map(function ($item) {
+                $item['start_date'] = Carbon::parse($item['start_date'])
+                    ->locale('id')
+                    ->translatedFormat('d F Y');
+                $item['end_date'] = Carbon::parse($item['end_date'])
+                    ->locale('id')
+                    ->translatedFormat('d F Y');
+                return $item;
+            })->toArray();
+
         } catch (\Throwable $e) {
             // 🔹 4. Jika API gagal, fallback ke data dummy biar dashboard tetap jalan
             $dashboardData = [
