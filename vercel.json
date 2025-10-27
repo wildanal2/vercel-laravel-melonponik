@@ -55,7 +55,7 @@
     "outputDirectory": "public",
     "env": {
         "APP_ENV": "production",
-        "APP_DEBUG": "false",
+        "APP_DEBUG": "true",
         "APP_NAME": "MelonPonik",
         "APP_URL": "https://melonponik.vercel.app",
         "ASSET_URL": "https://melonponik.vercel.app",
