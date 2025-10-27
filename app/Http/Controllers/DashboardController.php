@@ -9,7 +9,54 @@ use Illuminate\Support\Facades\Log;
 
 class DashboardController extends Controller
 {
+
     public function index()
+    {
+        try {
+            // 🔹 1. Panggil API Google Apps Script kamu
+            $response = Http::get('https://script.google.com/macros/s/AKfycbwmbKjhQdbJj6uSnm3VuukOctUJoDJ8fk4cQe_USOtlxjnpESq4PnOrUZOE2-XUT_P6-w/exec');
+
+            if ($response->failed()) {
+                throw new \Exception('Gagal mengambil data dari API');
+            }
+
+            // 🔹 2. Decode JSON response
+            $data = $response->json();
+
+            // 🔹 3. Ambil masing-masing bagian data
+            $dashboardData = $data['sensorData'] ?? [];
+            $temperatureChartData = $data['temperatureChartData'] ?? [];
+            $tdsChartData = $data['tdsChartData'] ?? [];
+            $plantingData = $data['plantingData'] ?? [];
+        } catch (\Throwable $e) {
+            // 🔹 4. Jika API gagal, fallback ke data dummy biar dashboard tetap jalan
+            $dashboardData = [
+                'kelembapan_greenhouse' => 0,
+                'suhu_greenhouse' => 0,
+                'ph_pupuk' => 0,
+                'tds_pupuk' => 0,
+                'panel_surya' => 0,
+                'persentase_baterai' => 0
+            ];
+
+            $temperatureChartData = ['labels' => [], 'data' => []];
+            $tdsChartData = ['labels' => [], 'data' => []];
+            $plantingData = [];
+
+            // opsional: log error
+            Log::error('Dashboard API error: ' . $e->getMessage());
+        }
+
+        // 🔹 5. Kirim ke view
+        return view('pages.dashboard', [
+            'dashboardData' => $dashboardData,
+            'temperatureChartData' => $temperatureChartData,
+            'tdsChartData' => $tdsChartData,
+            'plantingData' => $plantingData
+        ]);
+    }
+
+    public function indexcache()
     {
         try {
             // 🔹 1. Ambil data dari cache, atau fetch dari API jika cache kosong

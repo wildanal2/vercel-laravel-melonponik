@@ -29,7 +29,7 @@
         { "src": "/favicon-16x16.png", "dest": "/public/favicon-16x16.png" },
         { "src": "/favicon-32x32.png", "dest": "/public/favicon-32x32.png" },
         { "src": "/favicon-48x48.png", "dest": "/public/favicon-48x48.png" },
-        { "src": "/manifest.json", "dest": "/public/manifest.json" },
+        { "src": "/build/manifest.json", "dest": "/manifest.json" },
         { "src": "/og-image.jpg", "dest": "/public/og-image.jpg" },
         { "src": "/robots.txt", "dest": "/public/robots.txt" },
         { "src": "/.htaccess", "dest": "/public/.htaccess" },
