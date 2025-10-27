@@ -5,11 +5,45 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Dashboard - Melonponik Admin</title>
+
+    <!-- SEO META -->
+    <meta name="description" content="Dashboard admin Melonponik - Sistem monitoring pertanian hidroponik berbasis IoT. Pantau kondisi greenhouse secara real-time: suhu, kelembapan, pH, TDS, dan parameter lainnya dengan mudah." />
+    <meta name="author" content="PT Melonponik" />
+    <meta name="keywords" content="hidroponik, monitoring, greenhouse, pertanian, dashboard, IoT, sensor, melonponik, agritech" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="id" />
+    <meta name="theme-color" content="#4CAF50" />
+
+    <!-- TITLE -->
+    <title>Dashboard Admin | Melonponik - Monitoring Hidroponik Cerdas</title>
+
+    <!-- FAVICONS / MULTI ICON -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="48x48" href="{{ asset('favicon-48x48.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
+    <link rel="manifest" href="{{ asset('build/manifest.json') }}">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+
+    <!-- OPEN GRAPH (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:title" content="Dashboard Admin | Melonponik - Monitoring Hidroponik Cerdas" />
+    <meta property="og:description" content="Pantau sistem hidroponik secara real-time dengan dashboard Melonponik. Monitoring suhu, kelembapan, pH, TDS, dan data sensor lainnya dengan mudah." />
+    <meta property="og:image" content="{{ asset('og-image.jpg') }}" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Melonponik" />
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dashboard Admin | Melonponik" />
+    <meta name="twitter:description" content="Dashboard monitoring hidroponik berbasis IoT untuk greenhouse Melonponik." />
+    <meta name="twitter:image" content="{{ asset('og-image.jpg') }}" />
+
+    <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
     <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet" />
+
+    <!-- FONT AWESOME -->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 
