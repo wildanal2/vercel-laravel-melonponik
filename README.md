@@ -1,76 +1,61 @@
-### not maintained anymore
-for the [simpliest reason](https://x.com/rauchg/status/1918517763644985605) 🇵🇸
-***
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-### A Laravel / Vercel boilerplate template with php 8.2
-This project will help you get started with a new Laravel project hosted on Vercel. It includes a basic setup for a Laravel project with a Vercel deployment pipeline.
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-The initial purpose of this repo was benchmarking a Laravel project's performance with Vercel's serverless functions and the least performant droplet on digitalocean, results can be found in [this thread](https://twitter.com/moghwan/status/1778543140280115620).
+## About Laravel
 
-The project is setup to use:
-- PHP 8.2
-- Laravel 11
-- Serverless SQLite or Supabase as a database engine
-- GitHub actions for deployment
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-The goal of this project is to provide a quick starting point as an alternative to (my case) DigitalOcean to run little projects with no cost.
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-### Setup
-- create a new GitHub project using [this template repo](https://github.com/new?template_name=laracel-app&template_owner=moghwan)
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-### local development / digitalocean setup
-- install dependencies:
-  - `composer install`
-- copy `.env.example` to `.env` and update your database credentials
-  - `cp .env.example .env`
-- clone your repo and create a laravel app key:
-  - `php artisan key:generate`
-- set permissions:
-  - `chmod -R 777 storage bootstrap/cache`
-- database permissions:
-  - `chmod 777 database/database.sqlite`
-- install sqlite module:
-  - `sudo apt-get install php8.x-sqlite3`
+## Learning Laravel
 
-### Getting your secrets
-- clone your repo and create a laravel app key:
-  - `php artisan key:generate`
-- Vercel: link your GitHub repo
-  - type: other
-  - deploy (it will fail and it's okay)
-- get your Vercel token & project/organization ids:
-  - https://vercel.com/moghwan/[YOUR-PROJECT]/settings > Project ID
-    - change node js version to 18
-  - https://vercel.com/account > Vercel ID (organization id)
-  - https://vercel.com/account/tokens > create a new token (name it `VERCEL_LARACEL_TOKEN` for example)
-- database
-  - Supabase:
-    - create a new project, password will be needed
-    - go to connect > copy uri 
-  - sqlite:
-    - a dummy db is already provided in the repo
-    - to use it, comment line 29 and uncomment line 30-31 in `.github/workflows/main.yml`
-    
-### Setting your secrets
-- Vercel: settings > environment variables
-  - `DB_URL`: copied uri, replace `[YOUR-PASSWORD]` with your Supabase project password
-  - `APP_KEY`: project id
-- GitHub: settings > secrets & variables > actions > new repository secret
-  - `DB_URL`: copied uri, replace `[YOUR-PASSWORD]` with your Supabase project password
-  - `VERCEL_LARACEL_TOKEN`: copied token
-  - `VERCEL_ORG_ID`: copied organization id
-  - `VERCEL_PROJECT_ID`: copied project id
-  - `SENTRY_LARAVEL_DSN`: your sentry dsn (optional)
-- GitHub: actions > redeploy last action
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-### Keep in mind
-- Deployments are done with GitHub Actions and Vercel cli, not Vercel's auto deploy.
-- Deployment via Vercel cli are run with the flag --force to avoid using cache, notably the `composer.lock` file.
-- Database seeder are run with every deployment for demo purposes, disable it by commenting this line `.github/workflows/main.yml:26`
-- This is a **fresh Laravel 11** install, these following changes are made as needed:
-  - `api/index.php` - the entry point for the Vercel serverless function.
-  - `dist/` - an empty folder for the default Vercel deployment output.
-  - `.github/workflows/main.yml` - a GitHub Actions workflow file to deploy the app to Vercel.
-  - `vercel.json` - a Vercel configuration file to define the serverless function and the php runtime.
-  - `database/seeders/DatabaseSeeder.php` - using User factory to seed users table with data.
-  - API endpoints are prefixed with `/backend` instead of `/api`.
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+
+## Laravel Sponsors
+
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+
+### Premium Partners
+
+- **[Vehikl](https://vehikl.com)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Redberry](https://redberry.international/laravel-development)**
+- **[Active Logic](https://activelogic.com)**
+
+## Contributing
+
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+
+## Code of Conduct
+
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
