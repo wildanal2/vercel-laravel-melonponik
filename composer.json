@@ -48,7 +48,7 @@
             "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
             "@php artisan migrate --graceful --ansi"
         ],
-        "vercel-build": "php artisan config:clear && php artisan cache:clear && php artisan view:clear && npm run build"
+        "vercel-build": "npm run build"
     },
     "extra": {
         "laravel": {
