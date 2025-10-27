@@ -1,0 +1,16 @@
+/* Sidebar link aktif */
+.nav-link.active-link {
+    background-color: #1abc9c !important; /* hijau toska lembut */
+    color: #fff !important;
+    border-radius: 4px;
+}
+
+/* Warna ikon ikut berubah */
+.nav-link.active-link .sb-nav-link-icon i {
+    color: #fff !important;
+}
+
+/* Hover efek halus */
+.nav-link.active-link:hover {
+    background-color: #16a085 !important;
+}
