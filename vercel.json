@@ -32,8 +32,20 @@
             "dest": "/public/favicon.ico"
         },
         {
+            "src": "/og-image.jpg",
+            "dest": "/public/og-image.jpg"
+        },
+        {
+            "src": "/favicon-48x48.png",
+            "dest": "/public/favicon-48x48.png"
+        },
+        {
             "src": "/robots.txt",
             "dest": "/public/robots.txt"
+        },
+        {
+            "src": "/build/manifest.json",
+            "dest": "/public/build/manifest.json"
         },
         {
             "src": "/(.*)",

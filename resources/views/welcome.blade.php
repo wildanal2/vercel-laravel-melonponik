@@ -29,6 +29,8 @@
     <meta property="og:title" content="Dashboard Admin | Melonponik - Monitoring Hidroponik Cerdas" />
     <meta property="og:description" content="Pantau sistem hidroponik secara real-time dengan dashboard Melonponik. Monitoring suhu, kelembapan, pH, TDS, dan data sensor lainnya dengan mudah." />
     <meta property="og:image" content="{{ asset('og-image.jpg') }}" />
+    <meta property="og:image:width" content="225" />
+    <meta property="og:image:height" content="225" />
     <meta property="og:url" content="{{ url()->current() }}" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Melonponik" />
