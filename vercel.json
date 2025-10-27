@@ -15,7 +15,7 @@
         "APP_ENV": "production",
         "APP_DEBUG": "false",
         "APP_NAME": "MelonPonik",
-        "APP_URL": "https://vercel-laravel-11.vercel.app",
+        "APP_URL": "https://melonponik.vercel.app",
         "APP_KEY": "base64:SHvmxrgeyFlxPuwJdVXHEarXK5gkuRcR2DhZKBWBTTk=",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
