@@ -9,6 +9,10 @@
     "github": {
         "enabled": false
     },
+    "builds": [
+        { "src": "api/index.php", "use": "@vercel/php" },
+        { "src": "vercel-build.sh", "use": "@vercel/bash" }
+    ],
     "routes": [
         {
             "src": "/assets/(.*)",
