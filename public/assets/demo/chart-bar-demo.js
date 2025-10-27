@@ -12,7 +12,14 @@ var myLineChart = new Chart(ctx, {
       label: "Revenue",
       backgroundColor: "rgba(2,117,216,1)",
       borderColor: "rgba(2,117,216,1)",
-      data: [1500, 1520, 1520, 1520, 1521, 1522],
+      data: [
+        Math.floor(Math.random() * 20) + 700,
+        Math.floor(Math.random() * 20) + 700,
+        Math.floor(Math.random() * 20) + 700,
+        Math.floor(Math.random() * 20) + 700,
+        Math.floor(Math.random() * 20) + 700,
+        Math.floor(Math.random() * 20) + 700
+      ],
     }],
   },
   options: {
