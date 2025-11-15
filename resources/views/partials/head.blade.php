@@ -21,18 +21,12 @@
 <!-- OPEN GRAPH -->
 <meta property="og:title" content="Melonponik - Melon Premium Indonesia" />
 <meta property="og:description" content="Melon premium hidroponik dengan tingkat kemanisan 15% Brix. Tersedia setiap hari dengan kualitas terbaik." />
-<meta property="og:image" content="{{ asset('images/melon-og.jpg') }}">
+<meta property="og:image" content="{{ asset('og-melon.png') }}">
 <meta property="og:image:width" content="225" />
 <meta property="og:image:height" content="225" />
 <meta property="og:url" content="{{ url()->current() }}" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Melonponik" />
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Melonponik - Melon Premium Indonesia">
-<meta name="twitter:description" content="Melon premium hidroponik dengan tingkat kemanisan 15% Brix. Tersedia setiap hari dengan kualitas terbaik.">
-<meta name="twitter:image" content="{{ asset('images/melon-og.jpg') }}">
 
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
