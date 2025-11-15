@@ -6,9 +6,12 @@
 </head>
 <body class="font-sans">
     <!-- Hero Section -->
-    <section class="pb-16 px-8">
+    <section class="pb-16 px-8 relative overflow-hidden">
+        <svg class="absolute -top-20 -right-82 md:-right-32 w-[800px] h-[80vh] -z-10" viewBox="0 0 600 500">
+            <path fill="#00bd2e" fill-opacity="0.8" d="M100,0 C150,150 250,100 300,200 S400,400 500,450 T600,500 L600,0 Z"></path>
+        </svg>
         @include('partials.header')
-        <div class="max-w-6xl mx-auto text-center">
+        <div class="max-w-6xl mx-auto text-center relative z-10">
             <div class="flex justify-center mb-8">
                 <img src="{{ asset('assets/melon/melon-headline.png') }}" alt="Melon Premium Melonponik dengan tingkat kemanisan 15% Brix" class="max-w-full h-auto">
             </div>

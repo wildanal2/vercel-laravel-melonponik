@@ -1,4 +1,4 @@
-<header class="bg-white py-4 px-8">
+<header class="py-4 px-8">
     <div class="max-w-[1280px] mx-auto flex justify-between items-center">
         <div class="flex items-center gap-3">
             <img
