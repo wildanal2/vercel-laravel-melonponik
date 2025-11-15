@@ -60,7 +60,7 @@ class DashboardController extends Controller
         }
 
         // 🔹 5. Kirim ke view
-        return view('pages.dashboard', [
+        return view('iot.dashboard', [
             'dashboardData' => $dashboardData,
             'temperatureChartData' => $temperatureChartData,
             'tdsChartData' => $tdsChartData,
@@ -106,7 +106,7 @@ class DashboardController extends Controller
         }
 
         // 🔹 4. Kirim ke view
-        return view('pages.dashboard', [
+        return view('iot.dashboard', [
             'dashboardData' => $dashboardData,
             'temperatureChartData' => $temperatureChartData,
             'tdsChartData' => $tdsChartData,
@@ -162,7 +162,7 @@ class DashboardController extends Controller
             ['jenis_melon' => 'Melon Sweetnet', 'greenhouse' => 'Greenhouse 10', 'usia_hst' => '70 HST', 'start_date' => '2025/08/18', 'end_date' => '2025/10/27', 'berat_panen' => '233 Kg']
         ];
 
-        return view('pages.dashboard', [
+        return view('iot.dashboard', [
             'dashboardData' => $dashboardData,
             'temperatureChartData' => $temperatureChartData,
             'tdsChartData' => $tdsChartData,

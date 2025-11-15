@@ -11,9 +11,9 @@
 
         {{-- Semua konten kartu, grafik, dan tabel dipindahkan ke sini --}}
         {{-- Bisa dipisah lagi ke komponen blade jika mau --}}
-        @include('pages.partials.cards')
-        @include('pages.partials.charts')
-        @include('pages.partials.table')
+        @include('iot.partials.cards')
+        @include('iot.partials.charts')
+        @include('iot.partials.table')
     </div>
 @endsection
 

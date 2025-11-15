@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    @include('partials.head')
+    @include('iot.partials.head')
 </head>
 
 <body class="sb-nav-fixed">
-    @include('partials.navbar')
+    @include('iot.partials.navbar')
 
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
-            @include('partials.sidebar')
+            @include('iot.partials.sidebar')
         </div>
 
         <div id="layoutSidenav_content">
@@ -17,11 +17,11 @@
                 @yield('content')
             </main>
 
-            @include('partials.footer')
+            @include('iot.partials.footer')
         </div>
     </div>
 
-    @include('partials.scripts')
+    @include('iot.partials.scripts')
     @yield('scripts')
 </body>
 </html>

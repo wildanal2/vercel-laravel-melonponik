@@ -8,21 +8,21 @@ class PagesController extends Controller
 {
     public function charts()
     {
-        return view('pages.statistik');
+        return view('iot.statistik');
     }
 
     public function tables()
     {
-        return view('pages.histori');
+        return view('iot.histori');
     }
 
     public function aktivitas()
     {
-        return view('pages.aktivitas');
+        return view('iot.aktivitas');
     }
 
     public function relay()
     {
-        return view('pages.relay');
+        return view('iot.relay');
     }
 }
