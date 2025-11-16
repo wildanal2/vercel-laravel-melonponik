@@ -68,13 +68,11 @@
                 <div class="swiper-wrapper">
                     @foreach($katalog as $product)
                     <div class="swiper-slide">
-                        <article class="bg-white rounded-2xl border shadow-xl p-6 mx-auto max-w-md">
+                        <article class="bg-white rounded-2xl border shadow-xl p-6 mx-auto max-w-md relative">
                             @if($product['product_type'])
-                            <div class="flex justify-between items-center mb-4">
-                                <span class="bg-[#8ec641] text-white px-4 py-1 rounded-full text-sm font-semibold">
-                                    {{ $product['product_type'] }}
-                                </span>
-                            </div>
+                            <span class="absolute top-4 left-4 bg-gradient-to-r from-[#8ec641] to-[#62af2f] text-white px-4 py-2 rounded-full text-sm font-bold z-10 shadow-lg transform hover:scale-110 transition-transform duration-300">
+                                {{ $product['product_type'] }}
+                            </span>
                             @endif
                             <div class="mb-4">
                                 <img src="{{ $product['img-url'] }}" alt="{{ $product['nama'] }}" class="w-full rounded-lg h-64 object-contain">
