@@ -15,13 +15,13 @@
             <div class="flex justify-center mb-8">
                 <img src="{{ asset('assets/melon/melon-headline.png') }}" alt="Melon Premium Melonponik dengan tingkat kemanisan 15% Brix" class="max-w-full h-auto">
             </div>
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
                 Melon Premium yang Tersedia Setiap Hari dengan<br>
                 <span class="text-2xl md:text-3xl font-normal text-gray-800">
                     tingkat Kemanisan 15% Brix Up
                 </span>
-            </h2>
-            <p class="text-xl text-[#00bc2e] mb-8">
+            </h1>
+            <p class="text-xl text-gray-800 opacity-80 mb-8">
                 Melon segar pilihan terbaik dengan citarasa manis yang menyehatkan</p>
         </div>
     </section>
@@ -45,11 +45,11 @@
                         sehingga hasil buah minim residu dan bisa tersedia setiap musim.
                     </p>
                     <div class="flex gap-4 items-center justify-center">
-                        <a href="tel:+6285826071884" class="bg-[#8ec641] text-white px-6 py-3 rounded-full flex items-center gap-2 hover:bg-[#7ab535] transition">
+                        <a href="tel:+6281233337445" class="bg-[#8ec641] text-white px-6 py-3 rounded-full flex items-center gap-2 hover:bg-[#7ab535] transition">
                             <i class="fas fa-phone"></i>
-                            <span>+62 858 2607 1884</span>
+                            <span>+62 812 3333 7445</span>
                         </a>
-                        <a href="https://wa.me/6285826071884" class="bg-[#8ec641] text-white px-6 py-3 rounded-full flex items-center gap-2 hover:bg-[#7ab535] transition">
+                        <a href="https://wa.me/6281233337445" class="bg-[#8ec641] text-white px-6 py-3 rounded-full flex items-center gap-2 hover:bg-[#7ab535] transition">
                             <i class="fab fa-whatsapp"></i>
                         </a>
                     </div>
@@ -81,12 +81,12 @@
                                 <img src="{{ asset('assets/melon/bay-hamigua.png') }}" alt="Melon Hamigua Premium" class="w-full rounded-lg h-64 object-contain">
                             </div>
                             <h3 class="text-2xl font-bold text-gray-800 mb-2">Melon Hamigua</h3>
-                            <p class="text-gray-600 mb-4">
+                            <p class="text-gray-600 mb-4 text-sm">
                                 Tekstur crunchy juicy, warna orange, tingkat kemanisan 15-17% brix, berat 1-2 kg per buah
                             </p>
                             <div class="flex justify-between items-center">
-                                <span class="text-3xl font-bold text-[#62af2f]">Rp. 25.000<span class="text-lg">/Kg</span></span>
-                                <a href="https://wa.me/6285826071884?text=Halo,%20saya%20tertarik%20dengan%20Melon%20Hamigua" class="bg-[#62af2f] text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-[#52991f] transition" aria-label="Pesan via WhatsApp">
+                                <span class="text-xl font-bold text-[#62af2f]">Rp. 25.000<span class="text-lg">/Kg</span></span>
+                                <a href="https://wa.me/6281233337445?text=Halo,%20saya%20tertarik%20dengan%20Melon%20Hamigua" class="bg-[#62af2f] text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-[#52991f] transition" aria-label="Pesan via WhatsApp">
                                     <i class="fas fa-shopping-cart" aria-hidden="true"></i>
                                 </a>
                             </div>
@@ -101,72 +101,12 @@
                                 <img src="{{ asset('assets/melon/bay-honeyglobe.png') }}" alt="Melon Honeyglobe Premium" class="w-full rounded-lg h-64 object-contain">
                             </div>
                             <h3 class="text-2xl font-bold text-gray-800 mb-2">Melon Honeyglobe</h3>
-                            <p class="text-gray-600 mb-4">
+                            <p class="text-gray-600 mb-4 text-sm">
                                 Tekstur crunchy juicy, warna orange, tingkat kemanisan 15-17% brix, berat 1-2 kg per buah
                             </p>
                             <div class="flex justify-between items-center">
-                                <span class="text-3xl font-bold text-[#62af2f]">Rp. 25.000<span class="text-lg">/Kg</span></span>
-                                <a href="https://wa.me/6285826071884?text=Halo,%20saya%20tertarik%20dengan%20Melon%20Honeyglobe" class="bg-[#62af2f] text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-[#52991f] transition" aria-label="Pesan via WhatsApp">
-                                    <i class="fas fa-shopping-cart" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="swiper-slide">
-                        <article class="bg-white rounded-2xl shadow-xl p-6 mx-auto max-w-md">
-                            <div class="flex justify-between items-center mb-4">
-                                <span class="bg-[#8ec641] text-white px-4 py-1 rounded-full text-sm font-semibold">PROMO</span>
-                            </div>
-                            <div class="mb-4">
-                                <img src="{{ asset('assets/melon/bay-inthanon.png') }}" alt="Melon Inthanon Premium" class="w-full rounded-lg h-64 object-contain">
-                            </div>
-                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Melon Inthanon</h3>
-                            <p class="text-gray-600 mb-4">
-                                Tekstur crunchy juicy, warna orange, tingkat kemanisan 15-17% brix, berat 1-2 kg per buah
-                            </p>
-                            <div class="flex justify-between items-center">
-                                <span class="text-3xl font-bold text-[#62af2f]">Rp. 25.000<span class="text-lg">/Kg</span></span>
-                                <a href="https://wa.me/6285826071884?text=Halo,%20saya%20tertarik%20dengan%20Melon%20Inthanon" class="bg-[#62af2f] text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-[#52991f] transition" aria-label="Pesan via WhatsApp">
-                                    <i class="fas fa-shopping-cart" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="swiper-slide">
-                        <article class="bg-white rounded-2xl shadow-xl p-6 mx-auto max-w-md">
-                            <div class="flex justify-between items-center mb-4">
-                                <span class="bg-[#8ec641] text-white px-4 py-1 rounded-full text-sm font-semibold">PROMO</span>
-                            </div>
-                            <div class="mb-4">
-                                <img src="{{ asset('assets/melon/bay-kirani.png') }}" alt="Melon Kirani Premium" class="w-full rounded-lg h-64 object-contain">
-                            </div>
-                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Melon Kirani</h3>
-                            <p class="text-gray-600 mb-4">
-                                Tekstur crunchy juicy, warna orange, tingkat kemanisan 15-17% brix, berat 1-2 kg per buah
-                            </p>
-                            <div class="flex justify-between items-center">
-                                <span class="text-3xl font-bold text-[#62af2f]">Rp. 25.000<span class="text-lg">/Kg</span></span>
-                                <a href="https://wa.me/6285826071884?text=Halo,%20saya%20tertarik%20dengan%20Melon%20Kirani" class="bg-[#62af2f] text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-[#52991f] transition" aria-label="Pesan via WhatsApp">
-                                    <i class="fas fa-shopping-cart" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="swiper-slide">
-                        <article class="bg-white rounded-2xl shadow-xl p-6 mx-auto max-w-md">
-                            <div class="flex justify-between items-center mb-4">
-                                <span class="bg-[#8ec641] text-white px-4 py-1 rounded-full text-sm font-semibold">PROMO</span>
-                            </div>
-                            <div class="mb-4">
-                                <img src="{{ asset('assets/melon/bay-sweetnet.png') }}" alt="Melon Sweetnet Premium" class="w-full rounded-lg h-64 object-contain">
-                            </div>
-                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Melon Sweetnet</h3>
-                            <p class="text-gray-600 mb-4">
-                                Tekstur crunchy juicy, warna orange, tingkat kemanisan 15-17% brix, berat 1-2 kg per buah
-                            </p>
-                            <div class="flex justify-between items-center">
-                                <span class="text-3xl font-bold text-[#62af2f]">Rp. 25.000<span class="text-lg">/Kg</span></span>
-                                <a href="https://wa.me/6285826071884?text=Halo,%20saya%20tertarik%20dengan%20Melon%20Sweetnet" class="bg-[#62af2f] text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-[#52991f] transition" aria-label="Pesan via WhatsApp">
+                                <span class="text-xl font-bold text-[#62af2f]">Rp. 25.000<span class="text-lg">/Kg</span></span>
+                                <a href="https://wa.me/6281233337445?text=Halo,%20saya%20tertarik%20dengan%20Melon%20Honeyglobe" class="bg-[#62af2f] text-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-[#52991f] transition" aria-label="Pesan via WhatsApp">
                                     <i class="fas fa-shopping-cart" aria-hidden="true"></i>
                                 </a>
                             </div>
@@ -184,27 +124,58 @@
     <section class="bg-gray-50 py-16 px-8">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Kata Pelanggan Kami</h2>
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <div>
-                    <blockquote class="bg-[#00bd2e] p-8 rounded-2xl shadow-lg text-white">
-                        <p class="text-lg mb-4 text-center">
-                            "Melon dari  melonponik buah yang mewah dan lezat.
-                            Rasanya manis dan segar, membuat saya ingin menikmatinya bersama
-                            kerabat dan keluarga."
-                        </p>
-                        <footer class="flex flex-col justify-center">
-                            <p class="text-center">Kepala Dinas Pertanian Jombang
-                            </p>
-                            <cite class="font-bold not-italic mx-auto text-center">Bapak Roni</cite>
-                        </footer>
-                    </blockquote>
-                </div>
-                <div class="flex justify-center">
-                    <div class="relative">
-                        <img src="{{ asset('assets/melon/testimoni1.png') }}" alt="Testimoni pelanggan Melonponik" class="rounded-full w-64 h-64 object-cover " loading="lazy">
-                        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-48 h-1 bg-[#62af2f]" aria-hidden="true"></div>
+            <div class="swiper testimonialSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <blockquote class="bg-[#00bd2e] p-8 rounded-2xl shadow-lg text-white">
+                                    <p class="text-lg mb-4 text-center">
+                                        "Melon dari melonponik buah yang mewah dan lezat.
+                                        Rasanya manis dan segar, membuat saya ingin menikmatinya bersama
+                                        kerabat dan keluarga."
+                                    </p>
+                                    <footer class="flex flex-col justify-center">
+                                        <p class="text-center">Kepala Dinas Pertanian Jombang</p>
+                                        <cite class="font-bold not-italic mx-auto text-center">Bapak Roni</cite>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                            <div class="flex justify-center">
+                                <div class="relative">
+                                    <img src="{{ asset('assets/melon/testimoni1.png') }}" alt="Testimoni pelanggan Melonponik" class="rounded-full w-64 h-64 object-cover" loading="lazy">
+                                    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-48 h-1 bg-[#62af2f]" aria-hidden="true"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <blockquote class="bg-[#00bd2e] p-8 rounded-2xl shadow-lg text-white">
+                                    <p class="text-lg mb-4 text-center">
+                                        "Melon dari melonponik buah yang mewah dan lezat.
+                                        Rasanya manis dan segar, membuat saya ingin menikmatinya bersama
+                                        kerabat dan keluarga."
+                                    </p>
+                                    <footer class="flex flex-col justify-center">
+                                        <p class="text-center">Kepala Dinas Pertanian Jombang</p>
+                                        <cite class="font-bold not-italic mx-auto text-center">Bapak Roni</cite>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                            <div class="flex justify-center">
+                                <div class="relative">
+                                    <img src="{{ asset('assets/melon/testimoni1.png') }}" alt="Testimoni pelanggan Melonponik" class="rounded-full w-64 h-64 object-cover" loading="lazy">
+                                    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-48 h-1 bg-[#62af2f]" aria-hidden="true"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="swiper-pagination mt-8"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </section>
@@ -231,6 +202,32 @@
                 },
                 1024: {
                     slidesPerView: 3,
+                }
+            }
+        });
+
+        const testimonialSwiper = new Swiper('.testimonialSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.testimonialSwiper .swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.testimonialSwiper .swiper-button-next',
+                prevEl: '.testimonialSwiper .swiper-button-prev',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 1,
+                },
+                1024: {
+                    slidesPerView: 1,
                 }
             }
         });

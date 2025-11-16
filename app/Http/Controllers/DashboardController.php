@@ -11,7 +11,7 @@ use Carbon\Carbon;
 class DashboardController extends Controller
 {
 
-    public function index()
+    public function indexdeff()
     {
         try {
             // 🔹 1. Panggil API Google Apps Script kamu
@@ -68,11 +68,11 @@ class DashboardController extends Controller
         ]);
     }
 
-    public function indexcache()
+    public function index()
     {
         try {
             // 🔹 1. Ambil data dari cache, atau fetch dari API jika cache kosong
-            $data = Cache::remember('dashboard_api_data', 15, function () {
+            $data = Cache::remember('dashboard_api_data', 60, function () {
                 $response = Http::get('https://script.google.com/macros/s/AKfycbwmbKjhQdbJj6uSnm3VuukOctUJoDJ8fk4cQe_USOtlxjnpESq4PnOrUZOE2-XUT_P6-w/exec');
 
                 if ($response->failed()) {

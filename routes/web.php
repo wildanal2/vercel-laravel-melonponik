@@ -6,6 +6,8 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\LandingController;
 
 Route::get('/', [LandingController::class, 'index'])->name('landing');
+Route::get('/about', [LandingController::class, 'about'])->name('about');
+Route::get('/contact', [LandingController::class, 'contact'])->name('contact');
 
 Route::prefix('iot')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('iot.dashboard');
