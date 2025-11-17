@@ -9,6 +9,7 @@
                 <tr>
                     <th>Jenis Melon</th>
                     <th>Greenhouse</th>
+                    <th>Populasi Tanaman</th>
                     <th>Usia HST</th>
                     <th>Start date</th>
                     <th>End date</th>
@@ -19,6 +20,7 @@
                 <tr>
                     <th>Jenis Melon</th>
                     <th>Greenhouse</th>
+                    <th>Populasi Tanaman</th>
                     <th>Usia HST</th>
                     <th>Start date</th>
                     <th>End date</th>
@@ -30,6 +32,7 @@
                 <tr>
                     <td>{{ $data['jenis_melon'] }}</td>
                     <td>{{ $data['greenhouse'] }}</td>
+                    <td>{{ $data['populasi_tanaman'] }}</td>
                     <td>{{ $data['usia_hst'] }}</td>
                     <td>{{ $data['start_date'] }}</td>
                     <td>{{ $data['end_date'] }}</td>

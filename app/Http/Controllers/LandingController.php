@@ -13,7 +13,8 @@ class LandingController extends Controller
     {
         try {
             $data = Cache::remember('landing_api_data', 900, function () {
-                $apilanding = "https://script.google.com/macros/s/AKfycbx41q-YSPDSeYo3CrEkChFiYjqQNHREkebkpgYFjxt0I1qTmTlalNQGLGVi32Bf00cWiA/exec";
+                $route =  "?endpoint=landing";
+                $apilanding = "https://script.google.com/macros/s/AKfycbxvggUwuJH6cAxIOx0aerNSIjuZRT2C2_Gk2_IdLaA279NTOw5S19UbPwJBnkGz7Xa6zw/exec".$route;
                 $response = Http::get($apilanding);
 
                 if ($response->failed()) {
