@@ -6,7 +6,7 @@
                 <address class="not-italic mb-4">
                     <p class="flex items-center gap-2 mb-2">
                         <i class="fas fa-phone text-[#9cd755]" aria-hidden="true"></i>
-                        <a href="tel:+6285826071884" class="hover:text-[#9cd755] transition">+62 858 2607 1884</a>
+                        <a href="tel:+6281233337445" class="hover:text-[#9cd755] transition">+62 812 3333 7445</a>
                     </p>
                     <p class="flex items-center gap-2 mb-2">
                         <i class="fas fa-envelope text-[#9cd755]" aria-hidden="true"></i>
@@ -27,7 +27,7 @@
                     <a href="https://tiktok.com/@melonponik" class="w-10 h-10 bg-[#9cd755] rounded-full flex items-center justify-center hover:bg-[#8ec641] transition" aria-label="TikTok">
                         <i class="fab fa-tiktok text-black" aria-hidden="true"></i>
                     </a>
-                    <a href="https://wa.me/6285826071884" class="w-10 h-10 bg-[#9cd755] rounded-full flex items-center justify-center hover:bg-[#8ec641] transition" aria-label="WhatsApp">
+                    <a href="https://wa.me/6281233337445" class="w-10 h-10 bg-[#9cd755] rounded-full flex items-center justify-center hover:bg-[#8ec641] transition" aria-label="WhatsApp">
                         <i class="fab fa-whatsapp text-black" aria-hidden="true"></i>
                     </a>
                 </div>
